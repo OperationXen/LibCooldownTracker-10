@@ -172,6 +172,15 @@ LCT_SpellData[120360] = {
 	duration = 3,
 	cooldown = 20
 }
+-- Hunter/Covenants/Kyrian
+-- Resonating Arrow
+LCT_SpellData[308491] = {
+	class = "HUNTER",
+  covenant = "KYRIAN",
+	offensive = true,
+	duration = 10,
+	cooldown = 60
+}
 
 -- Hunter/Beast Mastery
 -- Barbed Shot
@@ -299,12 +308,12 @@ LCT_SpellData[213691] = {
 }
 -- Hunter/Marksmanship/talents
 -- Trueshot
-LCT_SpellData[212431] = {
+LCT_SpellData[288613] = {
 	class = "HUNTER",
 	specID = { SPEC_HUNTER_MM },
 	talent = true,
 	offensive = true,
-	cooldown = 30
+	cooldown = 120
 }
 -- Piercing Shot
 LCT_SpellData[198670] = {
@@ -313,6 +322,15 @@ LCT_SpellData[198670] = {
 	talent = true,
 	offensive = true,
 	cooldown = 30
+}
+-- Doubletap
+LCT_SpellData[260402] = {
+	class = "HUNTER",
+	specID = { SPEC_HUNTER_MM },
+	talent = true,
+	offensive = true,
+	duration = 3,
+	cooldown = 60
 }
 
 -- Hunter/Survival

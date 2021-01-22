@@ -171,6 +171,14 @@ LCT_SpellData[206803] = {
 	talent = true,
 	cooldown = 60,
 }
+-- DH/Covenants/Kyrian
+-- The Hunt
+LCT_SpellData[323639] = {
+	class = "DEMONHUNTER",
+  covenant = "KYRIAN",
+	offensive = true,
+	cooldown = 90,
+}
 
 -- DH/Vengeance
 -- Sigil of Misery

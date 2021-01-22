@@ -10,7 +10,7 @@ LCT_SpellData[853] = {
 	class = "PALADIN",
 	stun = true,
 	cooldown = 25,
-	--opt_lower_cooldown = 25, -- This is an approximation. Technically: Fist of Justice talent=-10s/Judgement.
+	--opt_lower_cooldown = 25, -- This is an approximation. Technically: Fist of Justice talent=-10s/3 HoPo.
 }
 -- Divine Steed
 LCT_SpellData[190784] = {
@@ -28,8 +28,9 @@ LCT_SpellData[31884] = {
 	class = "PALADIN",
 	offensive = true,
 	defensive = true,
-	duration = 20,
+	duration = 25,
 	cooldown = 120,
+  cooldown_starts_on_aura_duration = true,
 }
 -- Hand of Reckoning
 LCT_SpellData[62124] = {
@@ -95,6 +96,7 @@ LCT_SpellData[498] = {
   opt_lower_cooldown = 42
 }
 -- Paladin/talents
+
 -- Repentance
 LCT_SpellData[20066] = {
 	class = "PALADIN",
@@ -219,9 +221,10 @@ LCT_SpellData[216331] = {
 	talent = true,
 	offensive = true,
 	defensive = true,
-	duration = 20,
+	duration = 25,
 	cooldown = 120,
-	replaces = 31884
+	replaces = 31884,
+  cooldown_starts_on_aura_duration = true,
 }
 
 -- Paladin/Protection
@@ -284,9 +287,10 @@ LCT_SpellData[207028] = {
 -- Seraphim
 LCT_SpellData[152262] = {
 	class = "PALADIN",
-	specID = { SPEC_PALADIN_PROTECTION },
 	talent = true,
 	cooldown = 45,
+	duration = 15,
+	offensive = true
 	-- TODO consumes charges of Shield of the Righteous
 }
 -- Blessing of Spellwarding
@@ -386,6 +390,8 @@ LCT_SpellData[231895] = {
 	offensive = true,
 	cooldown = 120,
 	replaces = 31884, -- Avenging Wrath
+  duration = 25,
+  cooldown_starts_on_aura_duration = true,
 }
 -- Hammer of Reckoning
 LCT_SpellData[247675] = {
